@@ -5,6 +5,7 @@
 	<title>Typer Game</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/tooltipster.bundle.min.css">
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -17,20 +18,20 @@
 
 		<ul class="informacoes">
 			<li>
-				
+				<i class="fa fa-file-text fa-2x icones" aria-hidden="true"></i>
 				<span>8</span> palvras
 			</li>
 
 			<li>
-				<i class="fa fa-clock-o" aria-hidden="true"></i>
+				<i class="fa fa-clock-o fa-2x icones" aria-hidden="true"></i>
 				<span class="tempo">10</span> segundos
 			</li>
 		</ul>
 
-		<textarea class="campo-digitacao" rows="10" cols="40"></textarea>
+		<textarea class="campo-digitacao" rows="8" cols="40"></textarea>
 		
 		<div class="botoes">
-			<button class="botao-reiniciar">Reiniciar Jogo</button>
+			<img src="img/restart.png" class="tooltip botao-reiniciar" title="Reiniciar jogo" />
 		</div>
 
 		<ul class="contadores">
@@ -41,5 +42,11 @@
 	</div>
 
 	<script src="js/lib/jquery-3.1.1.min.js"></script>
+	<script src="js/lib/tooltipster.bundle.min.js"></script>
+	<script>
+		$(document).ready(function() {
+            $('.tooltip').tooltipster();
+        });
+	</script>
 </body>
 </html>
