@@ -49,6 +49,10 @@
 	border: 3px solid #000;
 }
 
+.campo-desativado {
+	background-color: lightgray;
+}
+
 .botoes {
 	margin-bottom: 20px;
 }
